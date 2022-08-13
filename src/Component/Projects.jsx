@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React  from "react";
 import { Link } from "react-router-dom";
-import ProjectPopup from "./ProjectPopup";
+// import ProjectPopup from "./ProjectPopup";
 const images = [
     require('../assets/images/paraswap.png'),
     require('../assets/images/return-queen.png'),
@@ -12,7 +12,7 @@ const images = [
     require('../assets/images/b2bx.png'),
 ]
 export default function Projects() {
-  const [openImage, setOpenImage] = useState("");
+//   const [openImage, setOpenImage] = useState("");
 
   return (
     <>

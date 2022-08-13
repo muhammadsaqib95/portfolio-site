@@ -1,6 +1,4 @@
-import { IconContext } from "react-icons";
-import { GoX } from "react-icons/go";
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 export default function ProjectPopup({ image, onClick }) {
     const {id} = useParams();
