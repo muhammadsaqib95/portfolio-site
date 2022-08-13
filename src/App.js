@@ -1,24 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./Component/Header";
+import Hero from "./Component/Hero";
+import "@fontsource/roboto/100.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/900.css";
+import Projects from "./Component/Projects";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ProjectPopup from "./Component/ProjectPopup";
+
+const Portfolio = () => {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Projects />
+    </>
+  );
+}
+const SingleProject = () => {
+  return (
+    <>
+      <Header />
+      <ProjectPopup />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/:id" element={<SingleProject />} />
+      </Routes>
+        {/* <Header />
+        <Hero />
+        <Projects /> */}
+      </BrowserRouter>
+    </>
   );
 }
 
