@@ -1,5 +1,4 @@
 import React, {useState}  from "react";
-import { Link } from "react-router-dom";
 import ProjectPopup from "./ProjectPopup";
 const images = [
     require('../assets/images/paraswap.png'),

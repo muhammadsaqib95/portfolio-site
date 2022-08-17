@@ -1,11 +1,10 @@
 import React, { useEffect} from "react";
-import { useParams } from "react-router-dom";
 import { GoX } from "react-icons/go";
 import { IconContext } from "react-icons";
 export default function ProjectPopup({ image, onClick, isOpen }) {
     // const {id} = useParams();
     // console.log(id);
-    console.log(isOpen);
+    // console.log(isOpen);
   useEffect(() => {
     if(isOpen)
     {
