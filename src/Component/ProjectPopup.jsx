@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useEffect} from "react";
 import { useParams } from "react-router-dom";
-export default function ProjectPopup({ image, onClick }) {
-    const {id} = useParams();
-//     console.log(id);
-//   useEffect(() => {
-//     document.body.style.overflow = "hidden";
-//     return () => {
-//       document.body.style.overflow = "auto";
-//     };
-//   }, []);
+import { GoX } from "react-icons/go";
+import { IconContext } from "react-icons";
+export default function ProjectPopup({ image, onClick, isOpen }) {
+    // const {id} = useParams();
+    // console.log(id);
+    console.log(isOpen);
+  useEffect(() => {
+    if(isOpen)
+    {
+      document.body.style.overflow = "hidden";
+    }
+    else{
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
   return (
     <>
       <div 
-      className="w-full"
+      className={`transition-all duration-700 fixed left-0 w-screen h-screen z-50 bg-white overflow-y-auto  ease-in-out transform ${isOpen ? 'top-0' : 'top-full'} `}
       >
         <div className=" max-w-screen-xl w-full mx-auto mb-16 ">
-          {/* <div
+          <div
             className="cursor-pointer py-8 w-min sticky top-0 ml-auto"
             onClick={() => onClick("")}
           >
@@ -27,9 +36,10 @@ export default function ProjectPopup({ image, onClick }) {
             >
               <GoX />
             </IconContext.Provider>
-          </div> */}
+          </div>
           <img
-          src={require(`../assets/images/${id}.png`)}
+          // src={require(`../assets/images/${id}.png`)}
+          src={image}
             alt="project" className="shadow-custom-2 mx-auto" />
         </div>
       </div>

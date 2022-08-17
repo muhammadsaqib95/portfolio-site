@@ -1,6 +1,6 @@
-import React  from "react";
+import React, {useState}  from "react";
 import { Link } from "react-router-dom";
-// import ProjectPopup from "./ProjectPopup";
+import ProjectPopup from "./ProjectPopup";
 const images = [
     require('../assets/images/paraswap.png'),
     require('../assets/images/return-queen.png'),
@@ -12,15 +12,16 @@ const images = [
     require('../assets/images/b2bx.png'),
 ]
 export default function Projects() {
-//   const [openImage, setOpenImage] = useState("");
+  const [openImage, setOpenImage] = useState("");
 
   return (
     <>
-      {/* {openImage && <ProjectPopup image={openImage} onClick={setOpenImage} />} */}
+      {<ProjectPopup image={openImage} onClick={setOpenImage} isOpen={!!openImage} />}
       <div className="w-full max-w-screen-xl mx-auto px-3" id="projects">
-        <div className=" w-full text-center py-8 md:py-12  lg:py-20 flex items-center justify-start">
-          <hr className="w-40 bg-[#94BC55] h-[6px]" />
+        <div className=" w-full text-center py-8 md:py-12  lg:py-20 flex items-center justify-center">
+          <hr className="w-40 bg-[#94BC55] h-[2px]" />
           <h4 className="font-light text-2xl px-4 md:px-8">PORTFOLIO</h4>
+          <hr className="w-40 bg-[#94BC55] h-[2px]" />
         </div>
         <div className="columns-2">
           {React.Children.toArray(
@@ -28,18 +29,17 @@ export default function Projects() {
               return (
                 <>
                 <div>
-                <Link to={`/${image.split('/').pop().split('.')[0]}`}
+                {/* <Link to={`/${image.split('/').pop().split('.')[0]}`} */}
                 
-                >
+                {/* > */}
                   <img
                     key={index}
                     src={image}
                     alt="project"
                     className={` mb-4 hover:outline-blue-500 hover:outline-4 hover:outline cursor-pointer`}
-
-                    // onClick={() => setOpenImage(image)}
+                    onClick={() => setOpenImage(image)}
                     />
-                </Link>
+                {/* </Link> */}
                 </div>
 
                 </>

@@ -173,14 +173,15 @@ export default function Hero() {
               </svg>
             </div>
           </div>
-          <Link to="#projects">
-            <div className="w-12 h-12 min-h-12 min-w-12 rounded-full border border-[#707070] cursor-pointer mx-3 flex items-center justify-center">
+          <Link to="#projects" className="flex items-center gap-[11px] md:gap-0 mt-12 xl:mt-0">
+            <div className="w-12 h-12 min-h-12 min-w-12 rounded-full border border-[#707070] cursor-pointer mx-0 md:mx-3 flex items-center justify-center">
               <IconContext.Provider
                 value={{ color: "#707070", size: "1.5rem" }}
               >
                 <BsArrowDown />
               </IconContext.Provider>
             </div>
+            <p className="font-thin text-lg text-[#4d4d4d] ">See Recent Projects</p>
           </Link>
         </div>
       </div>

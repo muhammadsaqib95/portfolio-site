@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <div className="bg-white sticky top-0 w-full">
-      <div className="max-w-screen-xl w-full mx-auto flex items-center justify-between py-6  px-3">
+    <div className="bg-white sticky top-0 w-full shadow-sm">
+      <div className="max-w-screen-xl w-full mx-auto flex items-center justify-between py-3 md:py-6  px-3">
         <Link to="/">
           <div className="w-16 h-14">
             <svg
@@ -12,6 +12,7 @@ export default function Header() {
               width="61.378"
               height="57.723"
               viewBox="0 0 61.378 57.723"
+              className="w-8 md:w-12 lg:w-full"
             >
               <g id="Group_81" data-name="Group 81" transform="translate(0 0)">
                 <path
@@ -42,7 +43,7 @@ export default function Header() {
           </div>
         </Link>
         <a target='_blank' href='/kamranresume.pdf'>
-          <button className="font-bold text-sm px-8 py-3 bg-[#EFEFEF] text-[#223942] rounded-md">
+          <button className="font-bold text-sm px-4 md:px-8 py-2 md:py-3 bg-[#EFEFEF] text-[#223942] rounded-md">
             Resume
           </button>
         </a>
