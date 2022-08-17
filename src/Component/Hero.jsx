@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className="w-full">
       <div
-        className="max-w-screen-xl w-full mx-auto flex items-center justify-center"
+        className="max-w-screen-xl w-full mx-auto flex items-center justify-center max-h-[650px]"
         style={{ height: `calc(100vh - 100px)` }}
       >
         <div className="w-full px-3">
