@@ -1,46 +1,56 @@
-import React, {useState}  from "react";
+import React, { useState } from "react";
 import ProjectPopup from "./ProjectPopup";
 const images = [
-    require('../assets/images/paraswap.png'),
-    require('../assets/images/return-queen.png'),
-    require('../assets/images/auto-approve.png'),
-    require('../assets/images/fit-forever.png'),
-    require('../assets/images/b2bx.png'),
-    require('../assets/images/Induction.png'),
-    require('../assets/images/listerly.png'),
-    require('../assets/images/b2bx.png'),
-]
+  require("../assets/images/paraswap.png"),
+  require("../assets/images/return-queen.png"),
+  require("../assets/images/auto-approve.png"),
+  require("../assets/images/fit-forever.png"),
+  require("../assets/images/b2bx.png"),
+  require("../assets/images/Induction.png"),
+  require("../assets/images/listerly.png"),
+  require("../assets/images/b2bx.png"),
+];
 export default function Projects() {
   const [openImage, setOpenImage] = useState("");
 
   return (
     <>
-      {<ProjectPopup image={openImage} onClick={setOpenImage} isOpen={!!openImage} />}
+      {
+        <ProjectPopup
+          image={openImage}
+          onClick={setOpenImage}
+          isOpen={!!openImage}
+        />
+      }
       <div className="w-full max-w-screen-xl mx-auto px-3" id="projects">
-        <div className=" w-full text-center py-8 md:py-12  lg:py-20 flex items-center justify-center">
-          <hr className="w-40 bg-[#94BC55] h-[2px]" />
+        <div className=" w-full text-center py-8 md:py-12  lg:py-20 flex items-center justify-center max-w-md gap-6">
+          {/* <hr className="w-40 bg-[#94BC55] h-[2px]" />
           <h4 className="font-light text-2xl px-4 md:px-8">PORTFOLIO</h4>
-          <hr className="w-40 bg-[#94BC55] h-[2px]" />
+          <hr className="w-40 bg-[#94BC55] h-[2px]" /> */}
+          <div className="bg-[#9AD143] w-[3px] h-16"></div>
+          <h1 className="text-white font-light text-2xl text-left">
+            Singularly focused on user experience, I fearlessly tackle complex
+            challenges with empathy and intuition.
+          </h1>
         </div>
         <div className="columns-2">
           {React.Children.toArray(
             images.map((image, index) => {
               return (
                 <>
-                <div>
-                {/* <Link to={`/${image.split('/').pop().split('.')[0]}`} */}
-                
-                {/* > */}
-                  <img
-                    key={index}
-                    src={image}
-                    alt="project"
-                    className={` mb-4 hover:outline-blue-500 hover:outline-4 hover:outline cursor-pointer`}
-                    onClick={() => setOpenImage(image)}
-                    />
-                {/* </Link> */}
-                </div>
+                  <div>
+                    {/* <Link to={`/${image.split('/').pop().split('.')[0]}`} */}
 
+                    {/* > */}
+                    <img
+                      key={index}
+                      src={image}
+                      alt="project"
+                      className={` mb-4 hover:outline-blue-500 hover:outline-4 hover:outline cursor-pointer`}
+                      onClick={() => setOpenImage(image)}
+                    />
+                    {/* </Link> */}
+                  </div>
                 </>
               );
             })

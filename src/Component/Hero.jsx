@@ -4,184 +4,56 @@ import { IconContext } from "react-icons";
 import { Link } from "react-router-dom";
 export default function Hero() {
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#1B2435]">
       <div
         className="max-w-screen-xl w-full mx-auto flex items-center justify-center max-h-[650px]"
-        style={{ height: `calc(100vh - 100px)` }}
+        style={{ height: `calc(100vh - 104px)` }}
       >
         <div className="w-full px-3">
           <div className="flex flex-row items-center">
             <div className="xl:w-1/2 w-full">
-              <h3 className="font-extralight text-2xl text-[#4D4D4D]">
+              <h3 className="font-extralight text-2xl text-white">
                 I Create Meaningful
               </h3>
-              <h1 className="text-5xl font-bold text-[#223942] mt-3 mb-6">
+              <h1 className="text-5xl font-bold text-white mt-3 mb-6">
                 UX Brand Experiance.
               </h1>
-              <p className="text-[#4D4D4D] font-thin max-w-sm text-lg">
+              <p className="text-white font-thin max-w-sm text-lg">
                 Good visual design should equal good user experience.
               </p>
             </div>
             <div className="w-1/2 hidden xl:block">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="711.58"
-                height="408.581"
-                viewBox="0 0 711.58 538.581"
-                className="mr-3"
-              >
-                <g
-                  id="Group_1004"
-                  data-name="Group 1004"
-                  transform="translate(-1067.42 -270.71)"
-                >
-                  <path
-                    id="Subtraction_3"
-                    data-name="Subtraction 3"
-                    d="M178.414,179.527H0a179.814,179.814,0,0,1,15.082-68A182.946,182.946,0,0,1,31.643,81.707a186.444,186.444,0,0,1,21.7-26.183A189.623,189.623,0,0,1,142.717,5.218,193.212,193.212,0,0,1,178.414,0V179.527h0Z"
-                    transform="translate(1422.172 270.71)"
-                    fill="#94bc55"
-                    opacity="0.126"
-                  />
-                  <path
-                    id="Subtraction_7"
-                    data-name="Subtraction 7"
-                    d="M178.414,179.527H0a179.814,179.814,0,0,1,15.082-68A182.946,182.946,0,0,1,31.643,81.707a186.444,186.444,0,0,1,21.7-26.183A189.623,189.623,0,0,1,142.717,5.218,193.212,193.212,0,0,1,178.414,0V179.527h0Z"
-                    transform="translate(1067.42 270.71)"
-                    fill="#94bc55"
-                    opacity="0.126"
-                  />
-                  <path
-                    id="Subtraction_6"
-                    data-name="Subtraction 6"
-                    d="M89.182,90.3H0A91.176,91.176,0,0,1,15.817,41.1,93.649,93.649,0,0,1,26.664,27.927a94.594,94.594,0,0,1,44.675-25.3A96.024,96.024,0,0,1,89.182,0V90.3h0Z"
-                    transform="translate(1156.651 359.941)"
-                    fill="#94bc55"
-                  />
-                  <path
-                    id="Subtraction_10"
-                    data-name="Subtraction 10"
-                    d="M89.182,90.3H0A91.176,91.176,0,0,1,15.817,41.1,93.649,93.649,0,0,1,26.664,27.927a94.594,94.594,0,0,1,44.675-25.3A96.024,96.024,0,0,1,89.182,0V90.3h0Z"
-                    transform="translate(1071.57 540.001)"
-                    fill="#223942"
-                  />
-                  <path
-                    id="Subtraction_4"
-                    data-name="Subtraction 4"
-                    d="M178.414,0H0A181.022,181.022,0,0,0,4.316,35.178,180.254,180.254,0,0,0,15.082,68,182.946,182.946,0,0,0,31.643,97.82,186.444,186.444,0,0,0,53.343,124a188.963,188.963,0,0,0,26.183,21.9,190.06,190.06,0,0,0,30.01,16.982,190.747,190.747,0,0,0,33.181,11.421,193.211,193.211,0,0,0,35.7,5.218V0h0Z"
-                    transform="translate(1422.172 450.237)"
-                    fill="#94bc55"
-                  />
-                  <path
-                    id="Subtraction_5"
-                    data-name="Subtraction 5"
-                    d="M176.339,179.527H90.28c.009-.516.014-1.051.014-1.594a89.356,89.356,0,0,0-1.8-17.876,88.258,88.258,0,0,0-5.168-16.65,88.71,88.71,0,0,0-8.178-15.067,89.337,89.337,0,0,0-10.831-13.127A89.337,89.337,0,0,0,51.187,104.38,88.708,88.708,0,0,0,36.12,96.2a88.256,88.256,0,0,0-16.65-5.168,89.356,89.356,0,0,0-17.876-1.8c-.525,0-1.061,0-1.594.014V0H176.339V179.526Z"
-                    transform="translate(1600.586 270.71)"
-                    fill="#94bc55"
-                  />
-                  <rect
-                    id="Rectangle_92"
-                    data-name="Rectangle 92"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1600.586 450.237)"
-                    fill="#223942"
-                  />
-                  <rect
-                    id="Rectangle_97"
-                    data-name="Rectangle 97"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1424.248 629.762)"
-                    fill="#ecf1e3"
-                  />
-                  <rect
-                    id="Rectangle_98"
-                    data-name="Rectangle 98"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1600.586 629.762)"
-                    fill="#ecf1e3"
-                  />
-                  <rect
-                    id="Rectangle_96"
-                    data-name="Rectangle 96"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1247.908 629.763)"
-                    fill="#2b323a"
-                  />
-                  <rect
-                    id="Rectangle_95"
-                    data-name="Rectangle 95"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1071.57 629.765)"
-                    fill="#94bc55"
-                  />
-                  <rect
-                    id="Rectangle_94"
-                    data-name="Rectangle 94"
-                    width="176.339"
-                    height="179.526"
-                    transform="translate(1247.909 450.237)"
-                    fill="#ecf1e3"
-                  />
-                  <path
-                    id="Subtraction_9"
-                    data-name="Subtraction 9"
-                    d="M178.414,179.527H0a179.814,179.814,0,0,1,15.082-68A182.946,182.946,0,0,1,31.643,81.707a186.444,186.444,0,0,1,21.7-26.183A189.623,189.623,0,0,1,142.717,5.218,193.212,193.212,0,0,1,178.414,0V179.527h0Z"
-                    transform="translate(1424.247 629.232) rotate(180)"
-                    fill="#94bc55"
-                  />
-                  <path
-                    id="Subtraction_14"
-                    data-name="Subtraction 14"
-                    d="M178.414,0H0A181.022,181.022,0,0,0,4.316,35.178,180.254,180.254,0,0,0,15.082,68,182.946,182.946,0,0,0,31.643,97.82,186.445,186.445,0,0,0,53.343,124a188.963,188.963,0,0,0,26.183,21.9,190.06,190.06,0,0,0,30.01,16.982,190.747,190.747,0,0,0,33.181,11.421,193.211,193.211,0,0,0,35.7,5.218V0h0Z"
-                    transform="translate(1779 809.29) rotate(180)"
-                    fill="#fff"
-                  />
-                  <path
-                    id="Subtraction_8"
-                    data-name="Subtraction 8"
-                    d="M89.182,90.3H0A91.176,91.176,0,0,1,15.817,41.1,93.649,93.649,0,0,1,26.664,27.927a94.594,94.594,0,0,1,44.675-25.3A96.024,96.024,0,0,1,89.182,0V90.3h0Z"
-                    transform="translate(1335.016 540.001) rotate(180)"
-                    fill="#ecf1e3"
-                  />
-                  <path
-                    id="Subtraction_13"
-                    data-name="Subtraction 13"
-                    d="M89.182,90.3H0A91.176,91.176,0,0,1,15.817,41.1,93.649,93.649,0,0,1,26.664,27.927a94.594,94.594,0,0,1,44.675-25.3A96.025,96.025,0,0,1,89.182,0V90.3h0Z"
-                    transform="translate(1511.404 718.992)"
-                    fill="#94bc55"
-                  />
-                  <path
-                    id="Subtraction_11"
-                    data-name="Subtraction 11"
-                    d="M176.339,179.527H0a181.908,181.908,0,0,1,31.275-97.82A186.65,186.65,0,0,1,141.057,5.218,188.893,188.893,0,0,1,176.339,0V179.527h0Z"
-                    transform="translate(1071.57 629.762)"
-                    fill="#ecf1e3"
-                  />
-                  <path
-                    id="Subtraction_12"
-                    data-name="Subtraction 12"
-                    d="M178.414,0H0A181.022,181.022,0,0,0,4.316,35.178,180.254,180.254,0,0,0,15.082,68,182.946,182.946,0,0,0,31.643,97.82,186.445,186.445,0,0,0,53.343,124a188.963,188.963,0,0,0,26.183,21.9,190.06,190.06,0,0,0,30.01,16.982,190.747,190.747,0,0,0,33.181,11.421,193.211,193.211,0,0,0,35.7,5.218V0h0Z"
-                    transform="translate(1426.322 809.29) rotate(180)"
-                    fill="#223942"
-                  />
-                </g>
-              </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640.397" height="484.704" viewBox="0 0 640.397 484.704">
+  <g id="Group_1152" data-name="Group 1152" transform="translate(-1138.603 -324.587)">
+    <path id="Subtraction_3" data-name="Subtraction 3" d="M160.566,161.568H0a161.826,161.826,0,0,1,13.573-61.2,164.645,164.645,0,0,1,14.9-26.839A167.793,167.793,0,0,1,48.007,49.97,170.654,170.654,0,0,1,128.44,4.7,173.884,173.884,0,0,1,160.566,0V161.568h0Z" transform="translate(1457.867 324.587)" fill="#fff"/>
+    <path id="Subtraction_7" data-name="Subtraction 7" d="M160.566,161.568H0a161.826,161.826,0,0,1,13.573-61.2,164.645,164.645,0,0,1,14.9-26.839A167.793,167.793,0,0,1,48.007,49.97,170.654,170.654,0,0,1,128.44,4.7,173.884,173.884,0,0,1,160.566,0V161.568h0Z" transform="translate(1138.603 324.587)" fill="#fff"/>
+    <path id="Subtraction_6" data-name="Subtraction 6" d="M80.261,81.262H0A82.055,82.055,0,0,1,14.235,36.985,84.28,84.28,0,0,1,24,25.133,85.131,85.131,0,0,1,64.2,2.362,86.418,86.418,0,0,1,80.261,0V81.262h0Z" transform="translate(1218.908 404.892)" fill="#834dde"/>
+    <path id="Subtraction_10" data-name="Subtraction 10" d="M80.261,81.262H0A82.055,82.055,0,0,1,14.235,36.985,84.28,84.28,0,0,1,24,25.133,85.131,85.131,0,0,1,64.2,2.362,86.418,86.418,0,0,1,80.261,0V81.262h0Z" transform="translate(1142.338 566.939)" fill="#fff"/>
+    <path id="Subtraction_4" data-name="Subtraction 4" d="M160.566,0H0A162.913,162.913,0,0,0,3.884,31.659,162.223,162.223,0,0,0,13.573,61.2a164.645,164.645,0,0,0,14.9,26.839A167.794,167.794,0,0,0,48.007,111.6,170.06,170.06,0,0,0,71.571,131.31a171.047,171.047,0,0,0,27.008,15.283,171.665,171.665,0,0,0,29.862,10.278,173.883,173.883,0,0,0,32.126,4.7V0h0Z" transform="translate(1457.867 486.154)" fill="#ef5423"/>
+    <path id="Subtraction_5" data-name="Subtraction 5" d="M158.7,161.568H81.249c.008-.464.013-.946.013-1.434a80.417,80.417,0,0,0-1.622-16.088,79.429,79.429,0,0,0-4.651-14.984,79.836,79.836,0,0,0-7.36-13.56,80.4,80.4,0,0,0-9.748-11.814,80.4,80.4,0,0,0-11.814-9.748,79.834,79.834,0,0,0-13.56-7.36,79.428,79.428,0,0,0-14.984-4.651A80.417,80.417,0,0,0,1.434,80.305c-.473,0-.955,0-1.434.013V0H158.7V161.567Z" transform="translate(1618.434 324.587)" fill="#9ad143"/>
+    <rect id="Rectangle_92" data-name="Rectangle 92" width="158.699" height="161.567" transform="translate(1618.434 486.154)" fill="#212c40"/>
+    <rect id="Rectangle_98" data-name="Rectangle 98" width="158.699" height="161.567" transform="translate(1618.434 647.721)" fill="#e22268"/>
+    <rect id="Rectangle_95" data-name="Rectangle 95" width="158.699" height="161.567" transform="translate(1142.338 647.724)" fill="#39b174"/>
+    <path id="Subtraction_9" data-name="Subtraction 9" d="M160.566,161.568H0a161.826,161.826,0,0,1,13.573-61.2,164.645,164.645,0,0,1,14.9-26.839A167.793,167.793,0,0,1,48.007,49.97,170.654,170.654,0,0,1,128.44,4.7,173.884,173.884,0,0,1,160.566,0V161.568h0Z" transform="translate(1459.735 647.244) rotate(180)" fill="#2669f4"/>
+    <path id="Subtraction_14" data-name="Subtraction 14" d="M160.566,0H0A162.913,162.913,0,0,0,3.884,31.659,162.223,162.223,0,0,0,13.573,61.2a164.645,164.645,0,0,0,14.9,26.839A167.794,167.794,0,0,0,48.007,111.6,170.06,170.06,0,0,0,71.571,131.31a171.047,171.047,0,0,0,27.008,15.283,171.665,171.665,0,0,0,29.862,10.278,173.883,173.883,0,0,0,32.126,4.7V0h0Z" transform="translate(1779 809.29) rotate(180)" fill="#fff"/>
+    <path id="Subtraction_8" data-name="Subtraction 8" d="M80.261,81.262H0A82.055,82.055,0,0,1,14.235,36.985,84.28,84.28,0,0,1,24,25.133,85.131,85.131,0,0,1,64.2,2.362,86.418,86.418,0,0,1,80.261,0V81.262h0Z" transform="translate(1379.43 566.939) rotate(180)" fill="#ecf1e3"/>
+    <path id="Subtraction_13" data-name="Subtraction 13" d="M80.261,81.263H0A82.055,82.055,0,0,1,14.235,36.985,84.28,84.28,0,0,1,24,25.133,85.132,85.132,0,0,1,64.2,2.362,86.419,86.419,0,0,1,80.261,0V81.263h0Z" transform="translate(1538.173 728.025)" fill="#ff8748"/>
+    <path id="Subtraction_11" data-name="Subtraction 11" d="M158.7,161.568H0A163.711,163.711,0,0,1,28.146,73.533,167.979,167.979,0,0,1,126.946,4.7,170,170,0,0,1,158.7,0V161.568h0Z" transform="translate(1142.338 647.721)" fill="#212c40"/>
+    <path id="Subtraction_12" data-name="Subtraction 12" d="M160.566,0H0A162.913,162.913,0,0,0,3.884,31.659,162.223,162.223,0,0,0,13.573,61.2a164.645,164.645,0,0,0,14.9,26.839A167.794,167.794,0,0,0,48.007,111.6,170.06,170.06,0,0,0,71.571,131.31a171.047,171.047,0,0,0,27.008,15.283,171.665,171.665,0,0,0,29.862,10.278,173.883,173.883,0,0,0,32.126,4.7V0h0Z" transform="translate(1461.603 809.29) rotate(180)" fill="#fff"/>
+  </g>
+</svg>
+
             </div>
           </div>
           <Link to="#projects" className="flex items-center gap-[11px] md:gap-0 mt-12 xl:mt-0">
-            <div className="w-12 h-12 min-h-12 min-w-12 rounded-full border border-[#707070] cursor-pointer mx-0 md:mx-3 flex items-center justify-center">
+            <div className="w-12 h-12 min-h-12 min-w-12 rounded-full border border-white cursor-pointer mx-0 md:mx-3 flex items-center justify-center">
               <IconContext.Provider
-                value={{ color: "#707070", size: "1.5rem" }}
+                value={{ color: "white", size: "1.5rem" }}
               >
                 <BsArrowDown />
               </IconContext.Provider>
             </div>
-            <p className="font-thin text-lg text-[#4d4d4d] ">See Recent Projects</p>
+            <p className="font-thin text-lg text-white ">See Recent Projects</p>
           </Link>
         </div>
       </div>

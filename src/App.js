@@ -14,12 +14,14 @@ import ProjectPopup from "./Component/ProjectPopup";
 const Portfolio = () => {
   return (
     <>
-      <Header />
-      <Hero />
-      <Projects />
+      <div className="bg-[#1B2435]">
+        <Header />
+        <Hero />
+        <Projects />
+      </div>
     </>
   );
-}
+};
 const SingleProject = () => {
   return (
     <>
@@ -27,16 +29,16 @@ const SingleProject = () => {
       <ProjectPopup />
     </>
   );
-}
+};
 
 function App() {
   return (
     <>
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Portfolio />} />
-        <Route path="/:id" element={<SingleProject />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/:id" element={<SingleProject />} />
+        </Routes>
         {/* <Header />
         <Hero />
         <Projects /> */}
