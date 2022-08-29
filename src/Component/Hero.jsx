@@ -22,8 +22,8 @@ export default function Hero() {
                 Good visual design should equal good user experience.
               </p>
             </div>
-            <div className="w-1/2 hidden xl:block">
-            <svg xmlns="http://www.w3.org/2000/svg" width="640.397" height="484.704" viewBox="0 0 640.397 484.704">
+            <div className="w-max ml-auto hidden xl:block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="500.397" height="424.704" viewBox="0 0 640.397 484.704">
   <g id="Group_1152" data-name="Group 1152" transform="translate(-1138.603 -324.587)">
     <path id="Subtraction_3" data-name="Subtraction 3" d="M160.566,161.568H0a161.826,161.826,0,0,1,13.573-61.2,164.645,164.645,0,0,1,14.9-26.839A167.793,167.793,0,0,1,48.007,49.97,170.654,170.654,0,0,1,128.44,4.7,173.884,173.884,0,0,1,160.566,0V161.568h0Z" transform="translate(1457.867 324.587)" fill="#fff"/>
     <path id="Subtraction_7" data-name="Subtraction 7" d="M160.566,161.568H0a161.826,161.826,0,0,1,13.573-61.2,164.645,164.645,0,0,1,14.9-26.839A167.793,167.793,0,0,1,48.007,49.97,170.654,170.654,0,0,1,128.44,4.7,173.884,173.884,0,0,1,160.566,0V161.568h0Z" transform="translate(1138.603 324.587)" fill="#fff"/>

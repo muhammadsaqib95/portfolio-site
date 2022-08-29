@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+  const [scrollY, setScrollY] = useState(0);
+    function scrollLister () {
+        setScrollY(window.scrollY);
+    }
+  useEffect(() => {
+    window.addEventListener('scroll', scrollLister);
+    return () => {
+      window.removeEventListener('scroll', scrollLister);
+    }
+  },[])
   return (
-    <div className="bg-[#1B2435] sticky top-0 w-full shadow-sm shadow-black">
+    <div className={`bg-[#1B2435] sticky top-0 w-full z-20 shadow-sm ${scrollY > 100 ? 'shadow-[#212C40]' : '' }`}>
       <div className="max-w-screen-xl w-full mx-auto flex items-center justify-between py-3 md:py-6  px-3">
         <Link to="/">
           <div className="w-16 h-14">
