@@ -22,40 +22,39 @@ export default function Projects() {
       }
       <div className="w-full max-w-screen-xl mx-auto px-3" id="projects">
         <div className=" w-full text-center py-8 md:py-12  lg:py-20 flex items-center justify-center max-w-md gap-6">
-          {/* <hr className="w-40 bg-[#94BC55] h-[2px]" />
-          <h4 className="font-light text-2xl px-4 md:px-8">PORTFOLIO</h4>
-          <hr className="w-40 bg-[#94BC55] h-[2px]" /> */}
           <div className="bg-[#9AD143] w-[3px] h-16"></div>
           <h1 className="text-white font-light text-2xl text-left">
             Singularly focused on user experience, I fearlessly tackle complex
             challenges with empathy and intuition.
           </h1>
         </div>
-        <div className="grid gap-16 grid-cols-1 md:grid-cols-2 ">
+        <div className="grid gap-16 grid-cols-1 md:grid-cols-2  my-20">
           {React.Children.toArray(
             images.map((image, index) => {
               return (
                 <>
                   <div
-                    className={`${index % 2 == 0 ? "mt-32" : "mb-32"} group relative`}
+                    className={`${
+                      index % 2 == 0 ? "mt-32" : "mb-32"
+                    } group relative`}
                   >
                     <div className="z-[10] relative">
-                        {
-                          index % 2 == 0 && (
-                            <div className="h-full absolute left-1/2 right-0 bottom-[10%] w-[500px] z-[-1]  bg-[#212C40]">
-                              </div>
-                          )
-                        }
-                    <img
-                      key={index}
-                      src={image}
-                      alt="project"
-                      className={` mb-4 cursor-pointer z-10`}
-                      onClick={() => setOpenImage(image)}
+                      {index % 2 == 0 && (
+                        <div className="h-full absolute left-1/2 right-0 bottom-[10%] w-[500px] z-[-1]  bg-[#212C40]"></div>
+                      )}
+                      <img
+                        key={index}
+                        src={image}
+                        alt="project"
+                        className={` mb-4 z-10`}
+                        
                       />
-                      </div>
-                    <div className="absolute flex items-center w-max ml-auto gap-5 py-4 transition-all duration-500 top-[90%] right-0 -z-[1] group-hover:z-[1] opacity-100 group-hover:top-full group-hover:opacity-100">
-                      <h3 className="text-white text-lg font-normal">VIEW CASE STUDY</h3>
+                    </div>
+                    <div className="cursor-pointer absolute flex items-center w-max ml-auto gap-5 py-4 transition-all duration-500 top-[90%] right-0 -z-[1] group-hover:z-[1] opacity-100 group-hover:top-full group-hover:opacity-100"
+                    onClick={() => setOpenImage(image)}>
+                      <h3 className="text-white text-lg font-normal">
+                        VIEW CASE STUDY
+                      </h3>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -94,19 +93,6 @@ export default function Projects() {
             })
           )}
         </div>
-        {/* <div className="text-center my-16">
-          <Link to="/">
-            <img
-              src="https://apptimumlabs.com/wp-content/uploads/2022/01/apptimumlabs-favicon.svg"
-              alt="footer logo"
-              className="my-2 mx-auto"
-            />
-          </Link>
-          <p className="text-base font-normal mt-4">
-            © Copyright {new Date().getFullYear()}. All Rights Reserved.
-            Apptimum Labs Inc. - Quality Professionals
-          </p>
-        </div> */}
       </div>
     </>
   );

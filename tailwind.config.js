@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      transitionProperty: {
+        width: "width"
+      },
+      colors: {
+        'theme-black': "#1B2435",
+    },
   },
+},
   plugins: [],
 }
