@@ -35,11 +35,11 @@ export default function Projects() {
                 <>
                   <div
                     className={`${
-                      index % 2 == 0 ? "mt-32" : "mb-32"
+                      index % 2 === 0 ? "mt-32" : "mb-32"
                     } group relative`}
                   >
                     <div className="z-[10] relative">
-                      {index % 2 == 0 && (
+                      {index % 2 === 0 && (
                         <div className="h-full absolute left-1/2 right-0 bottom-[10%] w-[500px] z-[-1]  bg-[#212C40]"></div>
                       )}
                       <img
