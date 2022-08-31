@@ -11,6 +11,7 @@ import Projects from "./Component/Projects";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectPopup from "./Component/ProjectPopup";
 import ProjectSlider from "./Component/ProjectSlider";
+import Chat from "./Component/Chat";
 
 const Portfolio = () => {
   return (
@@ -20,6 +21,7 @@ const Portfolio = () => {
         <Hero />
         <Projects />
         <ProjectSlider />
+        <Chat />
       </div>
     </>
   );

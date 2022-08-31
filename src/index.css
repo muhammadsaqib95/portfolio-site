@@ -2,9 +2,9 @@ body {
   margin: 0;
   font-family: "Roboto";
 }
-html{
+html {
   scroll-behavior: smooth;
-  background-color: #1B2435;
+  background-color: #1b2435;
 }
 
 @tailwind base;
@@ -15,8 +15,90 @@ html{
   background: white !important;
 }
 .swiper-pagination-bullet-active {
-  background: #9AD143 !important;
+  background: #9ad143 !important;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
-  bottom : -6px !important;
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: -6px !important;
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade 1s;
+}
+
+.loader > div {
+  float: left;
+  display: block;
+  width: 30px;
+  margin-left: 1px;
+  height: 4px;
+  position: relative;
+
+  transition: all 1s ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name: dot-anim;
+}
+.loader div {
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+div.green {
+  background-color: #33aa73;
+}
+
+div.yellow {
+  animation-delay: 0.2s;
+  background-color: #ffd01a;
+}
+div.pink {
+  animation-delay: 0.4s;
+  background-color: #f8108d;
+}
+@keyframes fade {
+  0%,
+  50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes dot-anim {
+  0% {
+    top: -4px;
+  }
+  50% {
+    top: 4px;
+  }
+  100% {
+    top: -4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal__wrapper {
+    width: calc(100% - 27.6rem);
+  }
+}
+@media (min-width: 768px) {
+  .modal__wrapper {
+    width: calc(100% - 18.4rem);
+  }
+}
+.modal__wrapper {
+  width: 75%;
+  max-width: 1024px;
+  margin: auto;
+  max-width: 1440px;
+}
+.input-shadow{
+  box-shadow: inset 0 0 0 2px rgb(149 166 180 / 0%), 0 0 10px rgb(0 0 0 / 5%);
 }

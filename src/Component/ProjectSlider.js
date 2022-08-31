@@ -50,7 +50,7 @@ export default function ProjectSlider() {
               viewBox="0 0 26.809 13.2"
             >
               <defs>
-                <clipPath id="clip-path">
+                <clipPath id="clipPath">
                   <rect
                     id="Rectangle_979"
                     data-name="Rectangle 979"
@@ -63,7 +63,7 @@ export default function ProjectSlider() {
               <g
                 id="Group_1134"
                 data-name="Group 1134"
-                clip-path="url(#clip-path)"
+                clipPath="url(#clipPath)"
               >
                 <path
                   id="Path_12662"
