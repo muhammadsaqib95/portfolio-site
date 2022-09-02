@@ -12,6 +12,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectPopup from "./Component/ProjectPopup";
 import ProjectSlider from "./Component/ProjectSlider";
 import Chat from "./Component/Chat";
+import Tools from "./Component/Tools";
 
 const Portfolio = () => {
   return (
@@ -21,6 +22,7 @@ const Portfolio = () => {
         <Hero />
         <Projects />
         <ProjectSlider />
+        <Tools />
         <Chat />
       </div>
     </>

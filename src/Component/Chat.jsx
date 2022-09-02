@@ -10,7 +10,7 @@ export default function Chat() {
             setOpen={setShowform}
         />
     }
-      <div className="w-max mx-auto my-10">
+      <div className="w-max mx-auto my-20">
         <div>
           <h2 className="text-white font-normal text-3xl">Ready to Chat?</h2>
         </div>
