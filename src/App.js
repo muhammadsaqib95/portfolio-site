@@ -13,6 +13,7 @@ import ProjectPopup from "./Component/ProjectPopup";
 import ProjectSlider from "./Component/ProjectSlider";
 import Chat from "./Component/Chat";
 import Tools from "./Component/Tools";
+import Footer from "./Component/Footer";
 
 const Portfolio = () => {
   return (
@@ -24,6 +25,7 @@ const Portfolio = () => {
         <ProjectSlider />
         <Tools />
         <Chat />
+        <Footer />
       </div>
     </>
   );
