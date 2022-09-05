@@ -123,7 +123,7 @@
         transition: transform $initAT;
         transform: translate3d(0,0,0) scale(1);
         // background-position: 0px 0px;
-        background-repeat: no-repeat;
+        // background-repeat: no-repeat;
   
         @include contInactive {
           transform: translate3d(0,-100%,0) scale(1.2);
@@ -392,10 +392,11 @@
       .el__bg {
         transform: translate3d(0,0,0);
         transition: transform $moveAT;
-  
+        
         &:before {
           transition-delay: $moveAT;
           transform: scale(1.1);
+          background-repeat: no-repeat;
         }
       }
     }
