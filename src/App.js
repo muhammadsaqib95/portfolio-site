@@ -14,6 +14,7 @@ import ProjectSlider from "./Component/ProjectSlider";
 import Chat from "./Component/Chat";
 import Tools from "./Component/Tools";
 import Footer from "./Component/Footer";
+import AppProjects from "./Component/AppProjects";
 
 const Portfolio = () => {
   return (
@@ -23,6 +24,7 @@ const Portfolio = () => {
         <Hero />
         <Projects />
         <ProjectSlider />
+        <AppProjects />
         <Tools />
         <Chat />
         <Footer />
