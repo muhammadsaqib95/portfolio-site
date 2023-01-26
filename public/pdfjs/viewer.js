@@ -27,7 +27,7 @@
 
 'use strict';
 
-var DEFAULT_URL =  "CondoLiving.pdf";
+var DEFAULT_URL =  "https://precious-griffin-cd1b04.netlify.app/CondoLiving.pdf";
 var DEFAULT_SCALE_DELTA = 1.1;
 var MIN_SCALE = 0.25;
 var MAX_SCALE = 10.0;
@@ -37,8 +37,8 @@ var PAGE_NUMBER_LOADING_INDICATOR = 'visiblePageIsLoading';
 var DISABLE_AUTO_FETCH_LOADING_BAR_TIMEOUT = 5000;
 
 PDFJS.imageResourcesPath = 'images/';
-PDFJS.workerSrc = 'pdfjs/build/pdf.worker.js';
-PDFJS.cMapUrl = 'pdfjs/cmaps/';
+PDFJS.workerSrc = 'https://precious-griffin-cd1b04.netlify.app/pdfjs/build/pdf.worker.js';
+PDFJS.cMapUrl = 'https://precious-griffin-cd1b04.netlify.app/pdfjs/cmaps/';
 PDFJS.cMapPacked = true;
 
 var mozL10n = document.mozL10n || document.webL10n;
